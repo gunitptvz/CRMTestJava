@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="1" name="Recruitment.RecruitmentTest" time="1.601" errors="0" skipped="0">
+<testsuite tests="1" failures="1" name="Recruitment.RecruitmentTest" time="1.887" errors="0" skipped="0">
   <properties>
     <property name="idea.version" value="2018.1.3"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -64,25 +64,25 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="Recruitment.RecruitmentTest" name="test1" time="1.601">
-    <failure message="java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $" type="com.google.gson.JsonSyntaxException">com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
-	at com.google.gson.Gson.fromJson(Gson.java:934)
+  <testcase classname="Recruitment.RecruitmentTest" name="test1" time="1.887">
+    <failure message="java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $" type="com.google.gson.JsonSyntaxException">com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
+	at com.google.gson.Gson.fromJson(Gson.java:922)
 	at com.google.gson.Gson.fromJson(Gson.java:887)
 	at com.google.gson.Gson.fromJson(Gson.java:836)
-	at Recruitment.Data.MapJson.GetData(MapJson.java:24)
+	at com.google.gson.Gson.fromJson(Gson.java:808)
+	at Recruitment.Data.MapJson.GetData(MapJson.java:25)
 	at Recruitment.RecruitmentTest.test1(RecruitmentTest.java:29)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
-	at com.google.gson.stream.JsonReader.beginArray(JsonReader.java:350)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:80)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:61)
-	at com.google.gson.Gson.fromJson(Gson.java:922)
-	... 38 more
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
+	... 40 more
 </failure>
     <system-out>Configuring TestNG with: org.apache.maven.surefire.testng.conf.TestNG652Configurator@6895a785
 </system-out>
-    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 42202
+    <system-err>Starting ChromeDriver 2.39.562718 (9a2698cba08cf5a471a29d30c8b3e12becabb0e9) on port 17124
 Only local connections are allowed.
-���. 04, 2018 6:30:07 �� org.openqa.selenium.remote.ProtocolHandshake createSession
+���. 04, 2018 6:56:14 �� org.openqa.selenium.remote.ProtocolHandshake createSession
 INFO: Detected dialect: OSS
 </system-err>
   </testcase>

@@ -1,18 +1,18 @@
 -------------------------------------------------------------------------------
 Test set: Recruitment.RecruitmentTest
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.824 sec <<< FAILURE!
-test1(Recruitment.RecruitmentTest)  Time elapsed: 1.601 sec  <<< FAILURE!
-com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
-	at com.google.gson.Gson.fromJson(Gson.java:934)
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 14.17 sec <<< FAILURE!
+test1(Recruitment.RecruitmentTest)  Time elapsed: 1.887 sec  <<< FAILURE!
+com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:226)
+	at com.google.gson.Gson.fromJson(Gson.java:922)
 	at com.google.gson.Gson.fromJson(Gson.java:887)
 	at com.google.gson.Gson.fromJson(Gson.java:836)
-	at Recruitment.Data.MapJson.GetData(MapJson.java:24)
+	at com.google.gson.Gson.fromJson(Gson.java:808)
+	at Recruitment.Data.MapJson.GetData(MapJson.java:25)
 	at Recruitment.RecruitmentTest.test1(RecruitmentTest.java:29)
-Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
-	at com.google.gson.stream.JsonReader.beginArray(JsonReader.java:350)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:80)
-	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:61)
-	at com.google.gson.Gson.fromJson(Gson.java:922)
-	... 38 more
+Caused by: java.lang.IllegalStateException: Expected BEGIN_OBJECT but was BEGIN_ARRAY at line 1 column 2 path $
+	at com.google.gson.stream.JsonReader.beginObject(JsonReader.java:385)
+	at com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter.read(ReflectiveTypeAdapterFactory.java:215)
+	... 40 more
 

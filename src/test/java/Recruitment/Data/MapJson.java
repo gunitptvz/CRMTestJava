@@ -19,9 +19,10 @@ public class MapJson {
     public static String GetData(){
          String value = given()
                  .get(url)
+                 .getBody()
                  .asString();
          Gson gson = new Gson();
-         List<Data> result = gson.fromJson(value, new TypeToken<List<Data>>(){}.getType());
+         Data result = gson.fromJson(value, Data.class);
         return value;
     }
 }
