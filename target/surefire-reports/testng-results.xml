@@ -2,35 +2,27 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-05-31T08:46:26Z" name="Recruitment.RecruitmentTest" finished-at="2018-05-31T08:46:29Z" duration-ms="2947">
+  <suite started-at="2018-06-04T15:30:04Z" name="Recruitment.RecruitmentTest" finished-at="2018-06-04T15:30:18Z" duration-ms="14073">
     <groups>
     </groups>
-    <test started-at="2018-05-31T08:46:26Z" name="Command line test" finished-at="2018-05-31T08:46:29Z" duration-ms="2947">
+    <test started-at="2018-06-04T15:30:04Z" name="Command line test" finished-at="2018-06-04T15:30:18Z" duration-ms="14073">
       <class name="Recruitment.RecruitmentTest">
-        <test-method is-config="true" signature="openCRM()[pri:0, instance:Recruitment.RecruitmentTest@635eaaf1]" started-at="2018-05-31T08:46:26Z" name="openCRM" finished-at="2018-05-31T08:46:26Z" duration-ms="17" status="PASS">
+        <test-method is-config="true" signature="openCRM()[pri:0, instance:Recruitment.RecruitmentTest@647e447]" started-at="2018-06-04T15:30:04Z" name="openCRM" finished-at="2018-06-04T15:30:15Z" duration-ms="11515" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openCRM -->
-        <test-method signature="Test1()[pri:0, instance:Recruitment.RecruitmentTest@635eaaf1]" started-at="2018-05-31T08:46:26Z" name="Test1" finished-at="2018-05-31T08:46:29Z" duration-ms="2894" status="FAIL">
-          <exception class="org.openqa.selenium.WebDriverException">
+        <test-method signature="test1()[pri:0, instance:Recruitment.RecruitmentTest@647e447]" started-at="2018-06-04T15:30:15Z" name="test1" finished-at="2018-06-04T15:30:17Z" duration-ms="1592" status="FAIL">
+          <exception class="com.google.gson.JsonSyntaxException">
             <message>
-              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-GJ4QAHL', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
-Driver info: driver.version: FirefoxDriver]]>
+              <![CDATA[java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: '3.12.0', revision: '7c6e0b3', time: '2018-05-08T14:04:26.12Z'
-System info: host: 'DESKTOP-GJ4QAHL', ip: '192.168.0.102', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '10.0.1'
-Driver info: driver.version: FirefoxDriver
-at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:116)
-at java.base/java.util.Optional.orElseGet(Optional.java:358)
-at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:217)
-at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:165)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:125)
-at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:103)
-at Recruitment.RecruitmentTest.Test1(RecruitmentTest.java:20)
+              <![CDATA[com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
+at com.google.gson.Gson.fromJson(Gson.java:934)
+at com.google.gson.Gson.fromJson(Gson.java:887)
+at com.google.gson.Gson.fromJson(Gson.java:836)
+at Recruitment.Data.MapJson.GetData(MapJson.java:24)
+at Recruitment.RecruitmentTest.test1(RecruitmentTest.java:29)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -65,13 +57,19 @@ at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(Provide
 at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:85)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:115)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:75)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
+at com.google.gson.stream.JsonReader.beginArray(JsonReader.java:350)
+at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:80)
+at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:61)
+at com.google.gson.Gson.fromJson(Gson.java:922)
+... 38 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          </exception> <!-- com.google.gson.JsonSyntaxException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test1 -->
-        <test-method is-config="true" signature="closeCRM()[pri:0, instance:Recruitment.RecruitmentTest@635eaaf1]" started-at="2018-05-31T08:46:29Z" name="closeCRM" finished-at="2018-05-31T08:46:29Z" duration-ms="0" status="PASS">
+        </test-method> <!-- test1 -->
+        <test-method is-config="true" signature="closeCRM()[pri:0, instance:Recruitment.RecruitmentTest@647e447]" started-at="2018-06-04T15:30:17Z" name="closeCRM" finished-at="2018-06-04T15:30:18Z" duration-ms="943" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeCRM -->

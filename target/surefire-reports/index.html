@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Recruitment.RecruitmentTest">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Recruitment.RecruitmentTest" title="Recruitment.RecruitmentTest" class="method navigator-link" hash-for-method="Test1">Test1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Recruitment.RecruitmentTest" title="Recruitment.RecruitmentTest" class="method navigator-link" hash-for-method="test1">test1</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Recruitment.RecruitmentTest -->
@@ -125,20 +125,21 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Test1">
-                  </a> <!-- Test1 -->
-                  <span class="method-name">Test1</span>
-                  <div class="stack-trace">org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: WIN10
-Build info: version: &apos;3.12.0&apos;, revision: &apos;7c6e0b3&apos;, time: &apos;2018-05-08T14:04:26.12Z&apos;
-System info: host: &apos;DESKTOP-GJ4QAHL&apos;, ip: &apos;192.168.0.102&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;10.0.1&apos;
-Driver info: driver.version: FirefoxDriver
-	at org.openqa.selenium.firefox.FirefoxBinary.&lt;init&gt;(FirefoxBinary.java:116)
-	at java.base/java.util.Optional.orElseGet(Optional.java:358)
-	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:217)
-	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:165)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:125)
-	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:103)
-	at Recruitment.RecruitmentTest.Test1(RecruitmentTest.java:20)
+                  <a name="test1">
+                  </a> <!-- test1 -->
+                  <span class="method-name">test1</span>
+                  <div class="stack-trace">com.google.gson.JsonSyntaxException: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.Gson.fromJson(Gson.java:934)
+	at com.google.gson.Gson.fromJson(Gson.java:887)
+	at com.google.gson.Gson.fromJson(Gson.java:836)
+	at Recruitment.Data.MapJson.GetData(MapJson.java:24)
+	at Recruitment.RecruitmentTest.test1(RecruitmentTest.java:29)
+Caused by: java.lang.IllegalStateException: Expected BEGIN_ARRAY but was BEGIN_OBJECT at line 1 column 2 path $
+	at com.google.gson.stream.JsonReader.beginArray(JsonReader.java:350)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:80)
+	at com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter.read(CollectionTypeAdapterFactory.java:61)
+	at com.google.gson.Gson.fromJson(Gson.java:922)
+	... 38 more
 ... Removed 34 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -198,14 +199,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Test1')
+data.setCell(0, 1, 'test1')
 data.setCell(0, 2, 'Recruitment.RecruitmentTest')
-data.setCell(0, 3, 2894);
+data.setCell(0, 3, 1592);
 window.suiteTableData['Recruitment.RecruitmentTest']= { tableData: data, tableDiv: 'times-div-Recruitment.RecruitmentTest'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 seconds</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Recruitment.RecruitmentTest">
               </div> <!-- times-div-Recruitment.RecruitmentTest -->
             </div> <!-- times-div -->
@@ -239,12 +240,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Test1</span>
-                <span class="method-start">37 ms</span>
+                <span class="method-name">test1</span>
+                <span class="method-start">11523 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">closeCRM</span>
-                <span class="method-start">2938 ms</span>
+                <span class="method-start">13121 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

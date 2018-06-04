@@ -1,5 +1,6 @@
 package Recruitment;
 
+import Recruitment.Data.MapJson;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -25,7 +26,7 @@ public class RecruitmentTest {
 
     @Test()
     public void test1(){
-
+        MapJson.GetData();
     }
 
     @AfterClass
