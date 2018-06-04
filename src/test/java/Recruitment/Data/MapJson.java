@@ -14,15 +14,14 @@ import java.util.Dictionary;
 import static io.restassured.RestAssured.given;
 
 public class MapJson {
-    static String url = "https://raw.githubusercontent.com/gunitptvz/CRMTestJava/master/Config1.json";
 
-    public static String GetData(){
+    public static Data GetData(String url){
          String value = given()
                  .get(url)
                  .getBody()
                  .asString();
          Gson gson = new Gson();
          Data result = gson.fromJson(value, Data.class);
-        return value;
+        return result;
     }
 }

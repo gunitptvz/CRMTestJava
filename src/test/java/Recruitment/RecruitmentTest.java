@@ -1,5 +1,6 @@
 package Recruitment;
 
+import Recruitment.Data.Data;
 import Recruitment.Data.MapJson;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -26,7 +27,9 @@ public class RecruitmentTest {
 
     @Test()
     public void test1(){
-        MapJson.GetData();
+        Data res = new Data();
+        String url = "https://raw.githubusercontent.com/gunitptvz/CRMTestJava/master/Config1.json";
+        res = MapJson.GetData(url);
     }
 
     @AfterClass
