@@ -7,23 +7,29 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+import Recruitment.Service.MainPage;
+import java.util.concurrent.TimeUnit;
 
 public class RecruitmentTest {
+    WebDriver crm;
+    MainPage mainpage;
+
     @BeforeClass
     public void openCRM(){
-        System.out.println("Open CRM");
+        crm = new ChromeDriver();
+        mainpage = new MainPage(crm);
+        crm.manage().window().maximize();
+        crm.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        mainpage.openPage();
     }
 
     @Test()
-    public void Test1(){
-        WebDriver chrome = new ChromeDriver();
-        WebDriver mozilla = new FirefoxDriver();
-        System.out.println("Test CRM");
-        Assert.assertEquals("1", "1");
+    public void test1(){
+
     }
 
     @AfterClass
-    public void closeCRM(){
-        System.out.println("Close CRM");
+    public void closeCRM() throws InterruptedException {
+        crm.quit();
     }
 }
