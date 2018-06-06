@@ -1,5 +1,8 @@
 package Recruitment.Data;
 
+/**
+ * Describes data fields, getters and setters
+ */
 public class Data {
     String url;
     String login;

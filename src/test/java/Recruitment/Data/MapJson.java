@@ -1,27 +1,27 @@
 package Recruitment.Data;
 
 import com.google.gson.Gson;
-import com.google.gson.JsonDeserializer;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
-import com.google.gson.reflect.TypeToken;
-import io.restassured.RestAssured;
-import io.restassured.internal.mapping.GsonMapper;
-
-import java.util.List;
-import java.util.Dictionary;
-
 import static io.restassured.RestAssured.given;
 
+/**
+ * Helps to map data from Json file
+ */
 public class MapJson {
-
-    public static Data GetData(String url){
-         String value = given()
+    /**
+     * Returns Data class object with initialized getters
+     * @param url - path to Github repository file
+     * @return - Data class object
+     */
+    public static Data getData(String url){
+        // Gets Json file from a remote Github repository
+        String value = given()
                  .get(url)
                  .getBody()
                  .asString();
+         // Parses Json to a class members
          Gson gson = new Gson();
          Data result = gson.fromJson(value, Data.class);
+
         return result;
     }
 }

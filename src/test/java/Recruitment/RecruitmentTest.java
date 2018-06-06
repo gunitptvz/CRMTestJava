@@ -9,27 +9,27 @@ import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import Recruitment.Service.MainPage;
+import Recruitment.Service.HomePage;
 import java.util.concurrent.TimeUnit;
 
 public class RecruitmentTest {
     WebDriver crm;
-    MainPage mainpage;
+    HomePage homepage;
 
     @BeforeClass
     public void openCRM(){
         crm = new ChromeDriver();
-        mainpage = new MainPage(crm);
+        homepage = new HomePage(crm);
         crm.manage().window().maximize();
         crm.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        mainpage.openPage();
+        homepage.openPage();
     }
 
     @Test()
     public void test1(){
         Data res = new Data();
         String url = "https://raw.githubusercontent.com/gunitptvz/CRMTestJava/master/Config1.json";
-        res = MapJson.GetData(url);
+        res = MapJson.getData(url);
     }
 
     @AfterClass

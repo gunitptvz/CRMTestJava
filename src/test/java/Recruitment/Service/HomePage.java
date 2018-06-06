@@ -5,13 +5,16 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-    public class MainPage {
+/**
+ * Contains methods for working with CRM homepage
+ */
+    public class HomePage {
     WebDriver crm;
     String inlinedialogframe = "InlineDialog_Iframe";
     @FindBy(id="buttonClose")
     WebElement closehellowwindowbutton;
 
-    public MainPage(WebDriver driver){
+    public HomePage(WebDriver driver){
         this.crm = driver;
         PageFactory.initElements(driver, this);
     }
