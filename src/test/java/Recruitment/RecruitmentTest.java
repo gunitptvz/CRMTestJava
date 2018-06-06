@@ -6,34 +6,36 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
 import Recruitment.Service.HomePage;
 import java.util.concurrent.TimeUnit;
 
 public class RecruitmentTest {
-    WebDriver crm;
+    WebDriver crm1;
+    WebDriver crm2;
     HomePage homepage;
 
     @BeforeClass
     public void openCRM(){
-        crm = new ChromeDriver();
-        homepage = new HomePage(crm);
-        crm.manage().window().maximize();
-        crm.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
+        crm1 = new ChromeDriver();
+        crm2 = new ChromeDriver();
+    }
+
+    @Test
+    public void createdCandidateTest(){
+        homepage = new HomePage(crm1);
         homepage.openPage();
     }
 
-    @Test()
-    public void test1(){
-        Data res = new Data();
-        String url = "https://raw.githubusercontent.com/gunitptvz/CRMTestJava/master/Config1.json";
-        res = MapJson.getData(url);
+    @Test
+    public void cretedCandidateTest2(){
+        homepage = new HomePage(crm2);
+        homepage.openPage();
     }
 
     @AfterClass
     public void closeCRM() throws InterruptedException {
-        crm.quit();
+        crm1.quit();
+        crm2.quit();
     }
 }
