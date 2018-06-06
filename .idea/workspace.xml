@@ -180,12 +180,6 @@
               <item name="Recruitment" type="b2602c69:ProjectViewProjectNode" />
               <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -194,50 +188,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="Data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="Service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Recruitment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Recruitment" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="JsonFiles" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -255,6 +205,12 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Загрузки\Программирование Java\Recruitment\src" />
+      <recent name="F:\Загрузки\Программирование Java\Recruitment\target\JsonFiles" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -396,7 +352,7 @@
       <workItem from="1527751139565" duration="8253000" />
       <workItem from="1527828720201" duration="14389000" />
       <workItem from="1528087891189" duration="24582000" />
-      <workItem from="1528267272614" duration="4635000" />
+      <workItem from="1528267272614" duration="5124000" />
     </task>
     <servers />
   </component>
@@ -433,7 +389,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="72830000" />
+    <option name="totallyTimeSpent" value="73319000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
